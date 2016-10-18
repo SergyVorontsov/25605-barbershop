@@ -1,7 +1,7 @@
 ﻿# Учебный проект «Барбершоп»
 
 * Студент: [Sergey Vorontsov](https://up.htmlacademy.ru/htmlcss/15/user/25605).
-* Наставник: Олег Зубов (https://vk.com/miospace)
+* Наставник: Олег Зубов (https://vk.com/miospace)!!!
 
 ---
 
