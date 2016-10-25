@@ -1,0 +1,22 @@
+body {
+	font-family: "PT Sans Narrow", Arial, serif; /*гарнитура (название шрифта)*/
+	font-size: 14px;	/*размер шрифта*/
+	line-height: 24px;/*высоту строки*/
+	color: #f7f4f1; /*цвет шрифта*/
+	font-weight: 500;/*жирность шрифта*/
+	background-color: grey; /*для видимости стилей*/
+}
+
+h1 { /*h1 нет в проекте, так как для каталога h1 выделить могу, но для главной
+	страницы тот же размер будут иметь несколько элементов h2*/
+}
+
+h2 {
+	font-family: "PT Sans Narrow", Arial, serif; 
+	font-size: 30px;
+	line-height: 42px;
+	color: #f7f4f1;
+	font-weight: 500;
+}
+
+

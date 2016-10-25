@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский!»</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
    	<header class="main-header">
   	  <div class="container">
   	    <nav class="main-navigation">
   	      <div class="main-logo">
-  	  	    <a href="main-page.html"><img src="http://placehold.it/50x20"" width="50" height="20" alt="Барбершоп"></a>
+  	  	    <a href="main-page.html"><img src="img/catalog-logo.png"" width="111" height="24" alt="Барбершоп"></a>
   	  	  </div>	
   		  <ul>
   		  	<li>
@@ -36,7 +37,7 @@
   	</header>	
   	
   	<main class="container">
-  	  <h1>Cредства для ухода</h1>
+  	  <h2>Cредства для ухода</h2>
   	  <div class="breadcrumbs">
   	  	<ul>
   	  	  <li>
@@ -68,12 +69,18 @@
           <input type="checkbox" name="american-crew" id="american-crew-field" checked>
           <label for="american-crew-field">American Crew</label>
   	  	  <p>Группы товаров:</p>
-		  <input type="checkbox" name="raizor" id="raizor-field">
-          <label for="raizor-field">Бритвенные принадлежности</label>
-          <input type="checkbox" name="care" id="care-field" checked>
-          <label for="carer-field">Средства для ухода</label>
-          <input type="checkbox" name="accessories" id="accessories-field">
-          <label for="accessories-field">Аксессуары</label>  	
+          <label for="raizor-field">
+            <input type="radio" name="groups" value="razor" id="raizor-field">
+              Бритвенные принадлежности
+          </label>
+          <label for="care-field">
+              <input type="radio" name="groups" value="care" id="care-field" checked>
+            Средства для ухода
+          </label>
+          <label for="accessories-field">
+              <input type="radio" name="groups" value="accessories" id="accessories-field">
+            Аксессуары
+          </label>
    	  	  <input type="submit" name="show" value="Показать">
   	  	</form>
   	  </div>
@@ -81,9 +88,9 @@
   	  <div class="catalog">
   	  	<article class="catalog-item">
   	      <figure class="item-image">
-            <a href="#" alt="Товар"><img src="image1" width="100" height="100" ></a>
+            <a href="#"><img src="img/item1.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#" alt="Товар">Набор для путешествий</a><br>
+          <p><a href="#">Набор для путешествий</a><br>
           "Baxter of California"</p>
           <div class="price">
           	<p>2900 РУБ.</p>
@@ -92,9 +99,9 @@
   	  	</article>
   	  	<article class="catalog-item">
   	      <figure class="item-image">
-            <a href="#" alt="Товар"><img src="image2" width="100" height="100" ></a>
+            <a href="#"><img src="img/item2.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#" alt="Товар">Увлажняющий кондиционер</a><br>
+          <p><a href="#">Увлажняющий кондиционер</a><br>
           "Baxter of California"</p>
           <div class="price">
           	<p>750 РУБ.</p>
@@ -103,9 +110,9 @@
   	  	</article>
   	  	<article class="catalog-item">
   	      <figure class="item-image">
-            <a href="#" alt="Товар"><img src="image3" width="100" height="100" ></a>
+            <a href="#"><img src="img/item3.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#" alt="Товар">Гель для волос</a><br>
+          <p><a href="#">Гель для волос</a><br>
           "Suavecito"</p>
           <div class="price">
           	<p>290 РУБ.</p>
@@ -114,9 +121,9 @@
   	  	</article>
   	  	<article class="catalog-item">
   	      <figure class="item-image">
-            <a href="#" alt="Товар"><img src="image4" width="100" height="100" ></a>
+            <a href="#"><img src="img/item4.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#" alt="Товар">Глина для укладки волос</a><br>
+          <p><a href="#">Глина для укладки волос</a><br>
           "American crew"</p>
           <div class="price">
            	<p>500 РУБ.</p>
@@ -125,9 +132,9 @@
   	  	</article>
   	  	<article class="catalog-item">
   	      <figure class="item-image">
-            <a href="#" alt="Товар"><img src="image5" width="100" height="100" ></a>
+            <a href="#"><img src="img/item5.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#" alt="Товар">Гель для волос</a><br>
+          <p><a href="#">Гель для волос</a><br>
           "American crew"</p>
           <div class="price">
            	<p>300 РУБ.</p>
@@ -136,9 +143,9 @@
   	  	</article>
   	  	<article class="catalog-item">
   	      <figure class="item-image">
-            <a href="#" alt="Товар"><img src="image5" width="100" height="100" ></a>
+            <a href="#"><img src="img/item6.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#" alt="Товар">Набор для бритья<br>
+          <p><a href="#">Набор для бритья<br>
           "Baxter of California"</a></p>
           <div class="price">
            	<p>3900 РУБ.</p>
@@ -165,9 +172,9 @@
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#"><img src="img/vk.png" width="25" height="16" alt="Вконтакте"></a>
+          <a class="social-btn social-btn-fb" href="#"><img src="img/f.png" width="12" height="22" alt="Фейсбук"></a>
+          <a class="social-btn social-btn-inst" href="#"><img src="img/insta.png" width="21" height="21" alt="Инстаграм"></a>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
