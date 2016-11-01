@@ -5,39 +5,39 @@
     <title>Барбершоп «Бородинский!»</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="catalog-page">
    	<header class="main-header">
-  	  <div class="container">
+  	  <div class="container clearfix">
   	    <nav class="main-navigation">
   	      <div class="main-logo">
   	  	    <a href="main-page.html"><img src="img/catalog-logo.png"" width="111" height="24" alt="Барбершоп"></a>
   	  	  </div>	
-  		  <ul>
-  		  	<li>
-  		  		<a href="#">Информация</a>
-  			</li>
-  			<li>
-  				<a href="#">Новости</a>
-  			</li>
-  			<li>
-  				<a href="#">Прайслист</a>
-  			</li>
-  			<li>
-  				<a href="#">Магазин</a>
-  			</li>
-  			<li>
-  				<a href="#">Контакты</a>
-  			</li>
-  		  </ul>
-  		</nav>
-  		<div class="user-block">
-  		  <a class="login" href="#">Вход</a>
-  		</div>
-  	  </div>
-  	</header>	
+  		    <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайслист</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+      </div>
+    </header> 
   	
-  	<main class="container">
-  	  <h2>Cредства для ухода</h2>
+  	<main class="container main-catalog">
+  	  <h1 class="category-name">Cредства для ухода</h1>
   	  <div class="breadcrumbs">
   	  	<ul>
   	  	  <li>
@@ -52,36 +52,55 @@
   	  	</ul>
   	  </div>
 		
-	  <div class="catalog-content">
+	  <div class="catalog-content clearfix">
   	  <div class="content-filter">
-  	  	<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+  	  	<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
   	  	  <p>Производители:</p>
-		  <input type="checkbox" name="baxter" id="baxter-field" checked>
-          <label for="baxter-field">Baxter of California</label>
-          <input type="checkbox" name="natty" id="natty-field">
-          <label for="natty-field">Mr Natty</label>
-          <input type="checkbox" name="suavecito" id="suavecito-field" checked>
-          <label for="suavecito-field">Suavecito</label>
-          <input type="checkbox" name="malin-goetzo" id="malin-goetz-field">
-          <label for="malin-goetz-field">Malin+Goetz</label>
-          <input type="checkbox" name="murrays" id="murrays-field">
-          <label for="murrays-field">Murray`s</label>
-          <input type="checkbox" name="american-crew" id="american-crew-field" checked>
-          <label for="american-crew-field">American Crew</label>
+          <ul>
+            <li>
+		          <input type="checkbox" name="baxter" id="baxter-field" checked>
+              <label for="baxter-field">Baxter of California</label>
+            </li>
+            <li>
+              <input type="checkbox" name="natty" id="natty-field">
+              <label for="natty-field">Mr Natty</label>
+            </li>
+            <li>
+              <input type="checkbox" name="suavecito" id="suavecito-field" checked>
+              <label for="suavecito-field">Suavecito</label>
+            </li>
+            <li>
+              <input type="checkbox" name="malin-goetzo" id="malin-goetz-field">
+              <label for="malin-goetz-field">Malin+Goetz</label>
+            </li>
+            <li>
+              <input type="checkbox" name="murrays" id="murrays-field">
+              <label for="murrays-field">Murray`s</label>
+            </li>
+            <li>
+              <input type="checkbox" name="american-crew" id="american-crew-field" checked>
+              <label for="american-crew-field">American Crew</label>
+            </li>
+          </ul>
   	  	  <p>Группы товаров:</p>
-          <label for="raizor-field">
-            <input type="radio" name="groups" value="razor" id="raizor-field">
-              Бритвенные принадлежности
-          </label>
-          <label for="care-field">
-              <input type="radio" name="groups" value="care" id="care-field" checked>
-            Средства для ухода
-          </label>
-          <label for="accessories-field">
-              <input type="radio" name="groups" value="accessories" id="accessories-field">
-            Аксессуары
-          </label>
-   	  	  <input type="submit" name="show" value="Показать">
+          <ul>
+            <li>
+              <label for="raizor-field">
+                <input type="radio" name="groups" value="razor" id="raizor-field">Бритвенные принадлежности
+              </label>
+            </li>
+            <li>
+              <label for="care-field">
+                <input type="radio" name="groups" value="care" id="care-field" checked>Средства для ухода
+              </label>
+            </li>
+            <li>
+              <label for="accessories-field">
+                <input type="radio" name="groups" value="accessories" id="accessories-field">Аксессуары
+              </label>
+            </li>
+          </ul>
+   	  	  <button class="btn" type="submit">Показать</button>
   	  	</form>
   	  </div>
 
@@ -90,10 +109,10 @@
   	      <figure class="item-image">
             <a href="#"><img src="img/item1.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#">Набор для путешествий</a><br>
-          "Baxter of California"</p>
-          <div class="price">
-          	<p>2900 РУБ.</p>
+          <p><a href="#">Набор для путешествий<br>
+          "Baxter of California"</a></p>
+          <div class="buy">
+          	<span class="price">2900 РУБ.</span>
            	<a class="btn" href="#">Купить</a>
            </div>     
   	  	</article>
@@ -101,10 +120,10 @@
   	      <figure class="item-image">
             <a href="#"><img src="img/item2.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#">Увлажняющий кондиционер</a><br>
-          "Baxter of California"</p>
-          <div class="price">
-          	<p>750 РУБ.</p>
+          <p><a href="#">Увлажняющий кондиционер<br>
+          "Baxter of California"</a></p>
+          <div class="buy">
+          	<span class="price">750 РУБ.</span>
            	<a class="btn" href="#">Купить</a>
           </div>     
   	  	</article>
@@ -112,10 +131,10 @@
   	      <figure class="item-image">
             <a href="#"><img src="img/item3.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#">Гель для волос</a><br>
-          "Suavecito"</p>
-          <div class="price">
-          	<p>290 РУБ.</p>
+          <p><a href="#">Гель для волос<br>
+          "Suavecito"</a></p>
+          <div class="buy">
+          	<span class="price">290 РУБ.</span>
            	<a class="btn" href="#">Купить</a>
           </div>     
   	  	</article>
@@ -123,10 +142,10 @@
   	      <figure class="item-image">
             <a href="#"><img src="img/item4.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#">Глина для укладки волос</a><br>
-          "American crew"</p>
-          <div class="price">
-           	<p>500 РУБ.</p>
+          <p><a href="#">Глина для укладки волос<br>
+          "American crew"</a></p>
+          <div class="buy">
+           	<span class="price">500 РУБ.</span>
            	<a class="btn" href="#">Купить</a>
           </div>     
   	  	</article>
@@ -134,10 +153,10 @@
   	      <figure class="item-image">
             <a href="#"><img src="img/item5.jpg" width="220" height="165" alt="Товар"></a>
           </figure>
-          <p><a href="#">Гель для волос</a><br>
-          "American crew"</p>
-          <div class="price">
-           	<p>300 РУБ.</p>
+          <p><a href="#">Гель для волос<br>
+          "American crew"</a></p>
+          <div class="buy">
+           	<span class="price">300 РУБ.</span>
            	<a class="btn" href="#">Купить</a>
            </div>     
   	  	</article>
@@ -147,24 +166,25 @@
           </figure>
           <p><a href="#">Набор для бритья<br>
           "Baxter of California"</a></p>
-          <div class="price">
-           	<p>3900 РУБ.</p>
+          <div class="buy">
+           	<span class="price">3900 РУБ.</span>
            	<a class="btn" href="#">Купить</a>
            </div>     
   	  	</article>  	  	
   	  </div>
 
-	  <div class="page-navigation">
-	  	<a class="navigation-btn" href="#">1</a>
-	  	<a class="navigation-btn-active" href="#">2</a>
-	  	<a class="navigation-btn" href="#">3</a>
-	  	<a class="navigation-btn" href="#">4</a>
+	  <div class="paginator">
+	  	<a class="paginator-btn" href="#">1</a>
+	  	<a class="paginator-btn" href="#">2</a>
+	  	<a class="paginator-btn" href="#">3</a>
+	  	<a class="paginator-btn" href="#">4</a>
 	  </div>
 	  </div>
+    </main>
 
   	<footer class="main-footer">
-  	  <div class="container">
-  	  	<section class="footer-contacts">
+      <div class="container clearfix">
+        <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
@@ -172,15 +192,15 @@
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#"><img src="img/vk.png" width="25" height="16" alt="Вконтакте"></a>
-          <a class="social-btn social-btn-fb" href="#"><img src="img/f.png" width="12" height="22" alt="Фейсбук"></a>
-          <a class="social-btn social-btn-inst" href="#"><img src="img/insta.png" width="21" height="21" alt="Инстаграм"></a>
+          <a class="social-btn social-btn-vk" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
-  	  </div> 		
-  	</footer>
+      </div>    
+    </footer>
   </body>
 </html>
