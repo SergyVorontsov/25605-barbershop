@@ -362,10 +362,14 @@ h2 {
 	margin-bottom: 20px;
 }
 
+.item-image-little {
+	font-size: 0;
+}
+
 .item-image-little img {
 	margin-right: 20px;
 }
 
 .item-image-little img:last-child {
-	margin-right: -10px;
+	margin-right: 0px;
 }
