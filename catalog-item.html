@@ -4,37 +4,38 @@
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский!»</title>
     <link href="css/style.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="main-header">
-  	  <div class="container clearfix">
-  	    <nav class="main-navigation">
-  	      <div class="main-logo">
-  	  	    <a href="main-page.html"><img src="img/catalog-logo.png"" width="111" height="24" alt="Барбершоп"></a>
-  	  	  </div>	
-  		  <ul>
-  		  	<li>
-  		  		<a href="#">Информация</a>
-  			</li>
-  			<li>
-  				<a href="#">Новости</a>
-  			</li>
-  			<li>
-  				<a href="#">Прайслист</a>
-  			</li>
-  			<li>
-  				<a href="#">Магазин</a>
-  			</li>
-  			<li>
-  				<a href="#">Контакты</a>
-  			</li>
-  		  </ul>
-  		</nav>
-  		<div class="user-block">
-  		  <a class="login" href="#">Вход</a>
-  		</div>
-  	  </div>
-  	</header>	
+      <div class="container clearfix">
+        <nav class="main-navigation">
+          <a class="main-logo" href="index.html">
+            <img src="img/catalog-logo.png"" width="111" height="24" alt="Барбершоп">
+          </a>  
+          <ul class="menu">
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайслист</a>
+            </li>
+            <li class="active">
+              <a>Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+      </div>
+    </header> 
 
   	<main class="container">
   	  <h1 class="categony-name">Набор для путешествий "Baxter of California"</h1>
@@ -46,20 +47,20 @@
   	  	  <li>
   	  	  	<a href="#">Магазин</a>
   	  	  </li>
-  	  	  <li>
+  	  	  <li class="long-name">
   	  	  	<a href="#">Средства для ухода</a>
   	  	  </li>
-  	  	  <li>
+  	  	  <li class="current">
   	  	  	Набор для путешествий "Baxter of California"
   	  	  </li>
   	  	</ul>
   	  </div>
 	
 	  <div class="item-content clearfix">
-	    <div class="item-content-left">
+	   <div class="item-content-left">
 		  <figure class="item-image-large">
             <a href="#"><img src="img/ctlg_item_big.jpg" width="486" height="524" alt="Набор"></a>
-          </figure>	
+      </figure>	
 		  <div class="item-image-little">
 		  	<img src="img/ctlg_item_1.jpg" width="140" height="149"></a>	
 		  	<img src="img/ctlg_item_2.jpg" width="140" height="149"></a>	
